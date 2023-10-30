@@ -10,9 +10,9 @@ check:
 
 .PHONY: clean
 clean:
+	ruff clean
 	rm -rf $(VENV)
 	rm -rf *.egg-info
-	ruff clean
 
 venv:
 	python -m venv $(VENV)
